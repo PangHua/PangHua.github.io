@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Cheers to my firt blog on github, Woo : )
-category: blog
 ---
 
 h1. {{ page.title }}
