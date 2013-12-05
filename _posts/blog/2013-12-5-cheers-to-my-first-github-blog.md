@@ -4,4 +4,14 @@ title: Cheers to my firt blog on github, Woo : )
 category: blog
 ---
 
-Hi how are you? :) 
+h1. {{ page.title }}
+p(meta). 5 Dec 2012 - BeiJing Ring Building
+
+Lately I tried to open up my own blog on some free productions, however they have some shortcomings more or less. Such as wordpress(blocked by the GW : (), quora.com(currently just a light blog with little features), csdn(server frequently hang...), finally I decide to set up my blog with github pages, blogging like a hacker :), pretty cool!
+
+I make it by referring below links:
+"Tom Preston-Werner":http://tom.preston-werner.com/
+"ruanyifeng":http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
+"beiyuu":http://beiyuu.com/github-pages/ 
+
+While the most import thing is to appreciate my best friend "TangChao", who is always getting my back to be a deadbeat, Hahaha :)
