@@ -30,6 +30,12 @@
         <h3>
 <a name="welcome-to-xianghuis-github-pages" class="anchor" href="#welcome-to-xianghuis-github-pages"><span class="octicon octicon-link"></span></a>Welcome to XiangHui's GitHub Pages.</h3>
 
+    <ul class="artical-list">
+    {% for post in site.categories.blog %}
+        <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+    
 <p>OpenStack hacker
 Mail:<a href="mailto:xianghuir@gmail.com">xianghuir@gmail.com</a></p>
     <ul class="artical-list">
