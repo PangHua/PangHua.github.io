@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cheers to my firt blog on github, Woo : )
+title: Cheers to my firt blog on github Woo
 ---
 
 h1. {{ page.title }}
