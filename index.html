@@ -14,6 +14,15 @@ title: panghua.github.io
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>panghua.github.io</title>
+    <style>
+         .outer {
+             width: 960px;
+             color: navy;
+             background-color: pink;
+             border: 2px solid darkblue;
+             padding: 5px;
+         }
+    </style> *
   </head>
 
   <body>
@@ -35,8 +44,7 @@ title: panghua.github.io
         <h3>
 <a name="welcome-to-xianghuis-github-pages" class="anchor" href="#welcome-to-xianghuis-github-pages"><span class="octicon octicon-link"></span></a>Welcome to XiangHui's GitHub Pages.</h3>
 
-<p>Contact
-Mail:<a href="mailto:xianghuir@gmail.com">xianghuir@gmail.com</a></p>
+<p>Contact Mail:<a href="mailto:xianghuir@gmail.com">xianghuir@gmail.com</a></p>
     <ul class="posts">
     {% for post in site.posts %}  
         <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
