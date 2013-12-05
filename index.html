@@ -1,3 +1,8 @@
+---
+layout: default
+title: panghua.github.io 
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -32,7 +37,7 @@
 
 <p>OpenStack hacker
 Mail:<a href="mailto:xianghuir@gmail.com">xianghuir@gmail.com</a></p>
-    <ul>
+    <ul class="posts">
     {% for post in site.posts %}  
         <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
