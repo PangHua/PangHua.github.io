@@ -3,14 +3,17 @@ layout: post
 title: OpenStack useful link
 ---
 
-h1. {{ page.title }}
+{{ page.title }}
+================
 
-p(meta). 5 Dec 2012 - BeiJing Ring Building
+<p class="meta">5 Dec 2012 - BeiJing Ring Building</p>
 
-"Neutron/APIv2-specification":
-https://wiki.openstack.org/wiki/Quantum/APIv2-specification#Create_Subnet
+Neutron/APIv2-specification
+---------------------------
 
-https://wiki.openstack.org/w/images/1/1c/Openstack-vif-configuration-SumitNaiksatam-v2.pdf
+[1]: https://wiki.openstack.org/wiki/Quantum/APIv2-specification#Create_Subnet
+
+[2]: https://wiki.openstack.org/w/images/1/1c/Openstack-vif-configuration-SumitNaiksatam-v2.pdf
 
 https://wiki.openstack.org/wiki/Network-refactoring
 
@@ -23,15 +26,16 @@ http://docs.openstack.org/api/openstack-network/1.0/content/Theory.html
 http://docs.openstack.org/api/openstack-network/1.0/content/Concepts-d1e369.html#Network
 
 "BlockDeviceConfig":
+
 https://wiki.openstack.org/wiki/BlockDeviceConfig
 
 "OpenStack Lab on VMware Workstation -Adding Cinder volume features":
+
 http://www.discoposse.com/index.php/2013/02/26/openstack-lab-on-vmware-workstation-adding-cinder-volume-features/
+
 https://wiki.openstack.org/wiki/NovaVMware/DeveloperGuide#Converting_a_sparse_vmdk_to_an_ESX-compatible_format
 
-"VmWare Blog":
-
-http://fungo.me/openstack/openstack-vmware-materials.html
+"VmWare Blog":http://fungo.me/openstack/openstack-vmware-materials.html
 
 http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1008127
 http://pubs.vmware.com/vsphere-51/index.jsp?topic=%2Fcom.vmware.wssdk.pg.doc%2FPG_Networking.11.4.html
