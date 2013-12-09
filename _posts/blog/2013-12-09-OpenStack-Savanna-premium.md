@@ -28,9 +28,12 @@ Key features are:
     - integration with vendor specific management tools, such as Apache Ambari or Cloudera Management Console;
 - predefined templates of Hadoop configurations with ability to modify parameters.
 
+
 ### Architecture
 
 The Savanna architecture consists of several components:
+
+![architecture](/images/tech/savanna-ach.jpg)
 
 - Cluster Configuration Manager - all the business logic resides here
 - Auth component - responsible for client authentication & authorization
@@ -44,6 +47,7 @@ The Savanna architecture consists of several components:
 Referrence:
 
 [Savanna][Savanna]
+
 [Wiki][Wiki]
 
 [Savanna]:  https://wiki.openstack.org/wiki/Savanna/EDP
