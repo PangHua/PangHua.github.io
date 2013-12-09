@@ -14,19 +14,19 @@ Savanna aims to provide users with simple means to provision Hadoop clusters by 
 
 The solution will address following use cases:
 
-fast provisioning of Hadoop clusters on OpenStack for Dev and QA;
-utilization of unused compute power from general purpose OpenStack IaaS cloud;
-“Analytics as a Service” for ad-hoc or bursty analytic workloads (similar to AWS EMR).
+- fast provisioning of Hadoop clusters on OpenStack for Dev and QA;
+- utilization of unused compute power from general purpose OpenStack IaaS cloud;
+- “Analytics as a Service” for ad-hoc or bursty analytic workloads (similar to AWS EMR).
+
 Key features are:
 
-designed as an OpenStack component;
+- designed as an OpenStack component;
+-managed through REST API with UI available as part of OpenStack Dashboard;
 
-managed through REST API with UI available as part of OpenStack Dashboard;
-
-support for different Hadoop distributions:
-pluggable system of Hadoop installation engines;
-integration with vendor specific management tools, such as Apache Ambari or Cloudera Management Console;
-predefined templates of Hadoop configurations with ability to modify parameters.
+- support for different Hadoop distributions:
+    - pluggable system of Hadoop installation engines;
+    - integration with vendor specific management tools, such as Apache Ambari or Cloudera Management Console;
+- predefined templates of Hadoop configurations with ability to modify parameters.
 
 ### Architecture
 
@@ -41,9 +41,10 @@ The Savanna architecture consists of several components:
 - Python Savanna Client - similar to other OpenStack components Savanna has its own python client
 - Savanna pages - GUI for the Savanna is located on Horizon
 
-Hadoop-specific APIs and functionality:
-- Hadoop cluster scaling
-- Elastic Data Processing: [Savanna]
+Referrence:
+
+[Savanna][Savanna]
+[Wiki][Wiki]
 
 [Savanna]:  https://wiki.openstack.org/wiki/Savanna/EDP
 
