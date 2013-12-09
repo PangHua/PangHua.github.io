@@ -81,18 +81,18 @@ gpgcheck=1
     chkconfig httpd on
     chkconfig memcached on
 
-Refference: Chapter 6. Add the dashboard
-OpenStack End User Guide
-Note: The key point is to configure /etc/openstack-dashboard/local_settings
+Refference: [Chapter 6. Add the dashboard OpenStack End User Guide]:  (http://docs.openstack.org/havana/install-guide/install/yum/content/ch_horizon.html)
 
-for example:
-horizon
+**Note**: The key point is to configure /etc/openstack-dashboard/local_settings
 
 Fixing Error:
-If below error appears, configure ServerName in /etc/httpd/conf/httpd.conf file.
-add ServerName $host_ip:80
-Starting httpd: httpd: apr_sockaddr_info_get() failed for 82-159
-httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+
+    Starting httpd: httpd: apr_sockaddr_info_get() failed for 82-159
+    httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+
+If above error appears, configure ServerName in /etc/httpd/conf/httpd.conf file.
+    
+    add ServerName $host_ip:80
 
 ### 5. Login Page on $HOST_IP
 
