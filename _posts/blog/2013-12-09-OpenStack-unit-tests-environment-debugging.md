@@ -58,12 +58,11 @@ heat.tests.test_instance_group.InstanceGroupTest.test_update_error              
 heat.tests.test_instance.InstancesTest.test_instance_update_instance_type_failed                          0.117
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badkey                                  0.115
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badprop                                 0.111
-heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086
-</pre></code>
+heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086</pre></code>
 
 To test /heat/tests/test_instance.py  `Class InstancesTest`:
 
-root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance.InstancesTest
+    root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance.InstancesTest
 
 <pre><code>
 Ran 68 (+15) tests in 1.305s (-0.802s)
@@ -80,17 +79,15 @@ heat.tests.test_instance.InstancesTest.test_instance_status_password            
 heat.tests.test_instance.InstancesTest.test_instance_status_rescue                0.085
 heat.tests.test_instance.InstancesTest.test_instance_status_resize                0.081
 heat.tests.test_instance.InstancesTest.test_instance_resume_volumes_step          0.075
-heat.tests.test_instance.InstancesTest.test_instance_suspend_volumes_step         0.074
-
+heat.tests.test_instance.InstancesTest.test_instance_suspend_volumes_step         0.074</pre></code>
 
 To test /heat/tests/test_instance.py `Class InstancesTest function test_build_nics()`:
-Ran 2 (-32) tests in 0.191s (-1.106s)
+<pre><code>Ran 2 (-32) tests in 0.191s (-1.106s)
 PASSED (id=14)
 Slowest Tests
 Test id                                                 Runtime (s)
 ------------------------------------------------------  -----------
-heat.tests.test_instance.InstancesTest.test_build_nics  0.188
-</pre></code>
+heat.tests.test_instance.InstancesTest.test_build_nics  0.188</pre></code>
 
 ## Error handling:
 
@@ -118,8 +115,7 @@ Traceback (most recent call last):
     from neutron.openstack.common.db.sqlalchemy.session import get_session
   File "/opt/stack/neutron/neutron/openstack/common/db/sqlalchemy/session.py", line 283, in <module>
     deprecated_opts=[cfg.DeprecatedOpt('sql_connection',
-AttributeError: 'module' object has no attribute 'DeprecatedOpt'
-</pre></code>
+AttributeError: 'module' object has no attribute 'DeprecatedOpt'</pre></code>
 
 Solution: (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
 
@@ -150,7 +146,8 @@ Downloading/unpacking beautifulsoup4 (from webtest)
   Downloading beautifulsoup4-4.3.1.tar.gz (142kB): 142kB downloaded
   Running setup.py egg_info for package beautifulsoup4
     
-Requirement already satisfied (use --upgrade to upgrade): setuptools in  /usr/local/lib/python2.7/dist-packages (from  waitress>=0.8.5->webtest)
+Requirement already satisfied (use --upgrade to upgrade): setuptools in  
+    /usr/local/lib/python2.7/dist-packages (from  waitress>=0.8.5->webtest)
 Installing collected packages: webtest, waitress, beautifulsoup4
   Running setup.py install for webtest
     
@@ -163,6 +160,5 @@ Installing collected packages: webtest, waitress, beautifulsoup4
   Running setup.py install for beautifulsoup4
     
 Successfully installed webtest waitress beautifulsoup4
-Cleaning up...
-</pre></code>
+Cleaning up...</pre></code>
 
