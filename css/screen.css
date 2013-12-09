@@ -82,7 +82,7 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 40em;
+  width: 60em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -94,7 +94,7 @@ ul.posts {
 }
 
   .site .title a {
-    color: #a00;
+    color: #aa0;
     text-decoration: none;
   }
 
