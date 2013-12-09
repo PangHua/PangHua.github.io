@@ -6,7 +6,7 @@ title: OpenStack useful link
 {{ page.title }}
 ================
 
-<p class="meta">5 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
 
 Neutron/APIv2-specification
 ---------------------------
