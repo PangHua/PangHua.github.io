@@ -9,12 +9,12 @@ title: OpenStack unit tests environment debugging
 <p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
 
 Most cases, it needs to provide corresponding unit tests for each project's source code in OpenSTack community,
-but due to  the dependency of packages version，unit test may be failed，this post just briefly introduce how to
-run  '/project/run_tests.sh'.
+but due to  the dependency of packages version, unit test may be failed, this post just briefly introduce how to
+run `/project/run_tests.sh`.
 
-Use 'OpenStack/Neutron' as an example ：
+Use `OpenStack/Neutron` as an example:
 
-#####If using virtual env to deploy OpenStack:
+##### If using virtual env to deploy OpenStack:
 
 */opt/stack/neutron/requirements.txt is the dependency requirement of neutron project*
 
@@ -24,12 +24,12 @@ Use 'OpenStack/Neutron' as an example ：
 
     tools/with_venv.sh pip install --upgrade /opt/stack/neutron/test_requirements.txt
 
-#####If not using virtual env to deploy OpenStack:
+##### If not using virtual env to deploy OpenStack:
 
     pip install --upgrade -r requirements.txt
     pip install --upgrade -r  test-requirements.txt
 
-Results appear ：
+Results appear:
 
     Successfully installed amqplib jsonrpclib python-neutronclient alembic six Mako
     Cleaning up...
@@ -42,7 +42,7 @@ Run /heat/tests/test_instance.py
 
     root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance
 
-Results including all key_words:“test_instance”
+Results including all key_words:`test_instance`
 <pre><code>Ran 106 (-1407) tests in 2.115s (-53.826s)
 PASSED (id=12)
 Slowest Tests
@@ -58,7 +58,8 @@ heat.tests.test_instance.InstancesTest.test_instance_update_instance_type_failed
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badkey                                  0.115
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badprop                                 0.111
 heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086
-
+</pre></code>
+<pre><code>
 To test /heat/tests/test_instance.py  Class InstancesTest:
 root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance.InstancesTest
 Ran 68 (+15) tests in 1.305s (-0.802s)
@@ -87,9 +88,9 @@ Test id                                                 Runtime (s)
 heat.tests.test_instance.InstancesTest.test_build_nics  0.188
 </pre></code>
 
-##Error handling:
+## Error handling:
 
-1.AttributeError: 'module' object has no attribute 'DeprecatedOpt'
+1.AttributeError: `module` object has no attribute `DeprecatedOpt`
 
 <pre><code>
 FAIL: unittest.loader.ModuleImportFailure.neutron.tests.unit.test_security_groups_rpc
@@ -116,14 +117,14 @@ Traceback (most recent call last):
 AttributeError: 'module' object has no attribute 'DeprecatedOpt'
 </pre></code>
 
-Solution： (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
+Solution: (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
     cd /usr/local/
     lib/python2.7/dist-packages/
     rm -rf oslo
     pip install <http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a2.tar.gz#egg=oslo.config-1.2.0a2>
 
 2. No module named webtest
-solution ：
+solution:
     root@ubuntu:/opt/stack/neutron# pip install webtest
 <pre><code>Downloading/unpacking webtest
   Downloading WebTest-2.0.7.zip (81kB): 81kB downloaded
