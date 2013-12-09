@@ -8,12 +8,13 @@ title: OpenStack useful link
 
 <p class="meta">5 Dec 2012 - BeiJing Ring Building</p>
 
-Neutron/APIv2-specification
----------------------------
+*Neutron/APIv2-specification*
 
-[1]: https://wiki.openstack.org/wiki/Quantum/APIv2-specification#Create_Subnet
+<https://wiki.openstack.org/wiki/Quantum/APIv2-specification#Create_Subnet>
 
-[2]: https://wiki.openstack.org/w/images/1/1c/Openstack-vif-configuration-SumitNaiksatam-v2.pdf
+test
+
+[2]: https://wiki.openstack.org/w/images/1/1c/Openstack-vif-configuration-SumitNaiksatam-v2.pdf "vif-configuration"
 
 https://wiki.openstack.org/wiki/Network-refactoring
 
