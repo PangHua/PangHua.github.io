@@ -29,11 +29,12 @@ Key features are:
 - predefined templates of Hadoop configurations with ability to modify parameters.
 
 
-### Architecture
+Architecture
+------------
 
 The Savanna architecture consists of several components:
 
-![architecture](/images/tech/savanna-ach.jpg)
+![architecture](/images/tech/savanna-ach.png)
 
 - Cluster Configuration Manager - all the business logic resides here
 - Auth component - responsible for client authentication & authorization
@@ -44,12 +45,25 @@ The Savanna architecture consists of several components:
 - Python Savanna Client - similar to other OpenStack components Savanna has its own python client
 - Savanna pages - GUI for the Savanna is located on Horizon
 
+EDP (Elastic Data Processing) diagram
+-------------------------------------
+
+![EDP](/images/tech/edp.png)
+
 Referrence:
 
-[Savanna][Savanna]
+[EDP][Savanna]
 
-[Wiki][Wiki]
+[Savanna Wiki][Wiki]
+
+[Guickstart][start]
+
+[Document][doc]
 
 [Savanna]:  https://wiki.openstack.org/wiki/Savanna/EDP
 
 [Wiki]:  https://wiki.openstack.org/wiki/Savanna
+
+[start]:  https://savanna.readthedocs.org/en/latest/devref/quickstart.html
+
+[doc]:  https://savanna.readthedocs.org/en/latest/
