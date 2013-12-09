@@ -58,7 +58,8 @@ heat.tests.test_instance_group.InstanceGroupTest.test_update_error              
 heat.tests.test_instance.InstancesTest.test_instance_update_instance_type_failed                          0.117
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badkey                                  0.115
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badprop                                 0.111
-heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086</pre></code>
+heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086
+</code></pre>
 
 To test /heat/tests/test_instance.py  `Class InstancesTest`:
 
@@ -87,7 +88,8 @@ PASSED (id=14)
 Slowest Tests
 Test id                                                 Runtime (s)
 ------------------------------------------------------  -----------
-heat.tests.test_instance.InstancesTest.test_build_nics  0.188</pre></code>
+heat.tests.test_instance.InstancesTest.test_build_nics  0.188
+</code></pre>
 
 ## Error handling:
 
@@ -115,7 +117,8 @@ Traceback (most recent call last):
     from neutron.openstack.common.db.sqlalchemy.session import get_session
   File "/opt/stack/neutron/neutron/openstack/common/db/sqlalchemy/session.py", line 283, in <module>
     deprecated_opts=[cfg.DeprecatedOpt('sql_connection',
-AttributeError: 'module' object has no attribute 'DeprecatedOpt'</pre></code>
+AttributeError: 'module' object has no attribute 'DeprecatedOpt'
+</code></pre>
 
 Solution: (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
 
@@ -160,5 +163,6 @@ Installing collected packages: webtest, waitress, beautifulsoup4
   Running setup.py install for beautifulsoup4
     
 Successfully installed webtest waitress beautifulsoup4
-Cleaning up...</pre></code>
+Cleaning up...
+</code></pre>
 

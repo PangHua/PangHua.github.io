@@ -13,8 +13,7 @@ title: Deploy OpenStack dashboard (Havana)  based on RHEL6.4
 Install and configure OpenStack components like Keystone/Glance/Nova/Neutron etc and make sure they are working well.
 
 ### 1. Configure yum source file *rhel.repo*:
-<pre><code>
-[openstack-havana]
+<pre><code>[openstack-havana]
 name=OpenStack Havana Repository for EPEL 6
 baseurl=Fedora People - repos.fedorapeople.org
 enabled=1
@@ -48,7 +47,7 @@ failovermethod=priority
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 gpgcheck=1
-</pre><code>
+</code></pre>
 
 ### 2. Install dashboard rpm package
 
@@ -548,4 +547,4 @@ SECURITY_GROUP_RULES = {
         'to_port': '3389',
     },
 }
-</pre></code>
+</code></pre>
