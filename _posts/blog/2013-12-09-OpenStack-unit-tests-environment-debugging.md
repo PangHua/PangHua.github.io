@@ -43,6 +43,7 @@ Run /heat/tests/test_instance.py
     root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance
 
 Results including all key_words:`test_instance`
+
 <pre><code>Ran 106 (-1407) tests in 2.115s (-53.826s)
 PASSED (id=12)
 Slowest Tests
@@ -59,9 +60,12 @@ heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badkey        
 heat.tests.test_instance_group.InstanceGroupTest.test_update_fail_badprop                                 0.111
 heat.tests.test_instance_group.InstanceGroupTest.test_create_error                                        0.086
 </pre></code>
-<pre><code>
-To test /heat/tests/test_instance.py  Class InstancesTest:
+
+To test /heat/tests/test_instance.py  `Class InstancesTest`:
+
 root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance.InstancesTest
+
+<pre><code>
 Ran 68 (+15) tests in 1.305s (-0.802s)
 PASSED (id=13)
 Slowest Tests
@@ -79,7 +83,7 @@ heat.tests.test_instance.InstancesTest.test_instance_resume_volumes_step        
 heat.tests.test_instance.InstancesTest.test_instance_suspend_volumes_step         0.074
 
 
-To test /heat/tests/test_instance.py Class InstancesTest function test_build_nics():
+To test /heat/tests/test_instance.py `Class InstancesTest function test_build_nics()`:
 Ran 2 (-32) tests in 0.191s (-1.106s)
 PASSED (id=14)
 Slowest Tests
@@ -118,6 +122,7 @@ AttributeError: 'module' object has no attribute 'DeprecatedOpt'
 </pre></code>
 
 Solution: (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
+
     cd /usr/local/
     lib/python2.7/dist-packages/
     rm -rf oslo
@@ -125,7 +130,9 @@ Solution: (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
 
 2. No module named webtest
 solution:
+
     root@ubuntu:/opt/stack/neutron# pip install webtest
+
 <pre><code>Downloading/unpacking webtest
   Downloading WebTest-2.0.7.zip (81kB): 81kB downloaded
   Running setup.py egg_info for package webtest
