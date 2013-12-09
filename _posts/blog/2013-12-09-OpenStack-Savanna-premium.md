@@ -48,7 +48,7 @@ The Savanna architecture consists of several components:
 EDP (Elastic Data Processing) diagram
 -------------------------------------
 
-![EDP](/images/tech/edp.png)
+[![EDP](/images/tech/edp.png)](/images/tech/edp.png)
 
 Referrence:
 

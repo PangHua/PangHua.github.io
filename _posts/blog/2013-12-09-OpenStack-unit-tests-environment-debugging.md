@@ -25,18 +25,23 @@ Use 'OpenStack/Neutron' as an example ：
     tools/with_venv.sh pip install --upgrade /opt/stack/neutron/test_requirements.txt
 
 #####If not using virtual env to deploy OpenStack:
+
     pip install --upgrade -r requirements.txt
     pip install --upgrade -r  test-requirements.txt
 
 Results appear ：
-Successfully installed amqplib jsonrpclib python-neutronclient alembic six Mako
-Cleaning up...
+
+    Successfully installed amqplib jsonrpclib python-neutronclient alembic six Mako
+    Cleaning up...
 
 Run test cases under projects
+
     root@ubuntu:/opt/stack/heat#./run_tests.sh
-....
+
 Run /heat/tests/test_instance.py
+
     root@ubuntu:/opt/stack/heat# ./run_tests.sh heat.tests.test_instance
+
 Results including all key_words:“test_instance”
 <pre><code>Ran 106 (-1407) tests in 2.115s (-53.826s)
 PASSED (id=12)
@@ -85,7 +90,8 @@ heat.tests.test_instance.InstancesTest.test_build_nics  0.188
 ##Error handling:
 
 1.AttributeError: 'module' object has no attribute 'DeprecatedOpt'
-======================================================================
+
+<pre><code>
 FAIL: unittest.loader.ModuleImportFailure.neutron.tests.unit.test_security_groups_rpc
 unittest.loader.ModuleImportFailure.neutron.tests.unit.test_security_groups_rpc
 ----------------------------------------------------------------------
@@ -108,15 +114,18 @@ Traceback (most recent call last):
   File "/opt/stack/neutron/neutron/openstack/common/db/sqlalchemy/session.py", line 283, in <module>
     deprecated_opts=[cfg.DeprecatedOpt('sql_connection',
 AttributeError: 'module' object has no attribute 'DeprecatedOpt'
-解决方法： (来自AttributeError: 'module' obje...” : Bugs : tripleo)
-cd /usr/local/
-lib/python2.7/dist-packages/
-rm -rf oslo
-pip install http://tarballs.openstack.org/os...
+</pre></code>
+
+Solution： (From <https://bugs.launchpad.net/tripleo/+bug/1194807>)
+    cd /usr/local/
+    lib/python2.7/dist-packages/
+    rm -rf oslo
+    pip install <http://tarballs.openstack.org/oslo.config/oslo.config-1.2.0a2.tar.gz#egg=oslo.config-1.2.0a2>
+
 2. No module named webtest
 solution ：
-root@ubuntu:/opt/stack/neutron# pip install webtest
-Downloading/unpacking webtest
+    root@ubuntu:/opt/stack/neutron# pip install webtest
+<pre><code>Downloading/unpacking webtest
   Downloading WebTest-2.0.7.zip (81kB): 81kB downloaded
   Running setup.py egg_info for package webtest
     
@@ -147,5 +156,5 @@ Installing collected packages: webtest, waitress, beautifulsoup4
     
 Successfully installed webtest waitress beautifulsoup4
 Cleaning up...
-
+</pre></code>
 
