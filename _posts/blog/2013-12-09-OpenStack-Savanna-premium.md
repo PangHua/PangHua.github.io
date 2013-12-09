@@ -34,7 +34,7 @@ Architecture
 
 The Savanna architecture consists of several components:
 
-![architecture](/images/tech/savanna-ach.png)
+[![architecture](/images/tech/savanna-ach.png)](/images/tech/savanna-ach.png)
 
 - Cluster Configuration Manager - all the business logic resides here
 - Auth component - responsible for client authentication & authorization
