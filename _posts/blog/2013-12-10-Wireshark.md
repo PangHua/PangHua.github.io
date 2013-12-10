@@ -10,7 +10,9 @@ title: Wireshark
 
 ## Win7
 
-[Download wireshark][Download wireshark]:  http://www.wireshark.org/download.html
+[Download wireshark][1]
+
+[1]:  http://www.wireshark.org/download.html
 
 ## Linux
 
@@ -25,14 +27,18 @@ title: Wireshark
     # wireshark
 
 After finish completely, capture live packets:
+
 [![wireshark2](/images/tech/wireshark2.jpg)](/images/tech/wireshark2.jpg)
 
 Packets info detail
+
 [![wireshark3](/images/tech/wireshark3.jpg)](/images/tech/wireshark3.jpg)
 
 ## Referrence
 
-[Online documents][Online documents]:  http://www.wireshark.org/docs/wsug_html/
+[Online documents][2]
+[2]:  http://www.wireshark.org/docs/wsug_html/
 
-[Wiki][Wiki]:  http://wiki.wireshark.org/
+[Wiki][2]
+[2]:  http://wiki.wireshark.org/
 
