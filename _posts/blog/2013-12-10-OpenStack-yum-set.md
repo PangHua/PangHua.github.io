@@ -25,6 +25,7 @@ title: OpenStack yum set
 
 ## Fedora
 <http://repos.fedorapeople.org/repos/openstack/>
+
 <http://repos.fedorapeople.org/repos/openstack/openstack-havana/epel-6/>
 
 ## Mirantis.com

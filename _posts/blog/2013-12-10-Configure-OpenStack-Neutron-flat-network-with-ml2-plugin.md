@@ -16,7 +16,7 @@ Compute node :  ESXI
 # Create flat network
 Overall networking configurations:
 
-- Edit conf files `/etc/neutron/neutron.conf` in Controller node:
+Edit conf files `/etc/neutron/neutron.conf` in Controller node:
 
     [DEFAULT]
     core_plugin = neutron.plugins.ml2.plugin.Ml2Plugin
@@ -25,7 +25,7 @@ Overall networking configurations:
     [database]
     connection = mysql://neutron:neutron@xianghui-10-9-1-141.sce....
 
-- Edit conf files `/etc/neutron/plugins/ml2/ml2_conf.ini` in Controller node:
+Edit conf files `/etc/neutron/plugins/ml2/ml2_conf.ini` in Controller node:
 
     [ml2]
     type_drivers = flat
@@ -34,7 +34,7 @@ Overall networking configurations:
     [ml2_type_flat]
     flat_networks = physnet1
 
-- Edit conf files `/etc/neutron/plugins/openvswitch/ovs_neutron_plugin.ini` in Controller node:
+Edit conf files `/etc/neutron/plugins/openvswitch/ovs_neutron_plugin.ini` in Controller node:
 
     [ovs]
     bridge_mappings = physnet1:br-eth0
@@ -80,8 +80,9 @@ Overall networking configurations:
             Interface "int-br-eth0"
     ovs_version: "1.10.0"
 
-# create a port group named "br-int" in ESXI host
+# create a [port group][1] named "br-int" in ESXI host
 
+[1]:  http://panghua.github.io/2013/12/10/Using-ESXI-as-OpenStack-Compute_node.html
 
 # Create flat network(flat-50)  ip range 50.0.0.0/24
     [root@xianghui-10-9-1-141 ˜]# neutron net-create flat-50 --provider:network_type flat --provider:physical_network physnet1
