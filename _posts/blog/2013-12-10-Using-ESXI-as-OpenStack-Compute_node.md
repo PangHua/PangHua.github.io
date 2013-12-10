@@ -45,7 +45,7 @@ create a network port group named "br-int" in ESXI driver with vSphere client on
 
 4. Fill the "Port group properties"
 
-[![ESXI-4](/images/tech/esxi4).jpg](/images/tech/esxi4.jpg)
+[![ESXI-4](/images/tech/esxi4.jpg)](/images/tech/esxi4.jpg)
 
 # Edit config file on controller node
 
@@ -66,10 +66,16 @@ create a network port group named "br-int" in ESXI driver with vSphere client on
 
 It's probably correct if appears below logs in file `/var/log/nova/compute.log`
 
-    2013-11-10 21:26:18.952 18723 INFO nova.openstack.common.periodic_task [-] NV-7A0397C Skipping periodic task _periodic_update_dns because its interval is negative
-    2013-11-10 21:26:19.115 18723 INFO nova.virt.driver [-] NV-91AF767 Loading compute driver 'vmwareapi.VMwareESXDriver'
-    2013-11-10 21:26:26.992 18723 INFO nova.openstack.common.rpc.impl_qpid [req-28af9fb3-b7ce-4c41-ac83-4a65f9b296f3 None None] NV-1A047FB Connected to AMQP server on localhost:5672
-    2013-11-10 21:26:27.001 18723 INFO nova.openstack.common.rpc.impl_qpid [req-28af9fb3-b7ce-4c41-ac83-4a65f9b296f3 None None] NV-1A047FB Connected to AMQP server on localhost:5672
+    2013-11-10 21:26:18.952 18723 INFO nova.openstack.common.periodic_task 
+    [-] NV-7A0397C Skipping periodic task _periodic_update_dns because its interval is negative
+    2013-11-10 21:26:19.115 18723 INFO nova.virt.driver [-] NV-91AF767 
+    Loading compute driver 'vmwareapi.VMwareESXDriver'
+    2013-11-10 21:26:26.992 18723 INFO nova.openstack.common.rpc.impl_qpid 
+    [req-28af9fb3-b7ce-4c41-ac83-4a65f9b296f3 None None] NV-1A047FB Connected 
+    to AMQP server on localhost:5672
+    2013-11-10 21:26:27.001 18723 INFO nova.openstack.common.rpc.impl_qpid 
+    [req-28af9fb3-b7ce-4c41-ac83-4a65f9b296f3 None None] NV-1A047FB Connected
+    to AMQP server on localhost:5672
 
 # Download vmdk image
 
@@ -98,5 +104,6 @@ Below is the clarification from vmware ：
     vmware_ostype="ubuntu64Guest" < ubuntuLTS-flat.vmdk
 
 referrence : 
+
 <https://wiki.openstack.org/wiki/NovaVMware/DeveloperGuide>
 <http://docs.openstack.org/havana/config-reference/content/vmware.html>
