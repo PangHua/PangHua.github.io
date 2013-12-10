@@ -81,7 +81,7 @@ gpgcheck=1
     chkconfig httpd on
     chkconfig memcached on
 
-Refference: [Chapter 6. Add the dashboard OpenStack End User Guide]:  (http://docs.openstack.org/havana/install-guide/install/yum/content/ch_horizon.html)
+Refference: [Chapter 6. Add the dashboard OpenStack End User Guide]:  http://docs.openstack.org/havana/install-guide/install/yum/content/ch_horizon.html
 
 **Note**: The key point is to configure /etc/openstack-dashboard/local_settings
 
@@ -95,7 +95,7 @@ If above error appears, configure ServerName in /etc/httpd/conf/httpd.conf file.
     add ServerName $host_ip:80
 
 ### 5. Login Page on $HOST_IP
-
+[![dashboard](/image/tech/dashboard.jpg)](/image/tech/dashboard.jpg)
 
 ### Example:
 <pre><code>

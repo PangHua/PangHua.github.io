@@ -1,0 +1,32 @@
+---
+layout: post
+title: Easily remove OpenStack
+---
+
+{{ page.title }}
+================
+
+<p class="meta">10 Dec 2012 - BeiJing Ring Building</p>
+
+# Uninstall openstack
+
+    [root@xianghui ~]# yum list installed | grep @openstack- | awk '{ print $1 }' | xargs yum -y remove
+
+# Uninstall MySQL
+
+    [root@xianghui ~]# yum -y remove mysql mysql-server MySQL-python
+    [root@xianghui ~]#  rm -rf /var/lib/mysql
+
+# Cleanup data
+Create file named cleanup
+
+    [root@xianghui ~]# vi cleanup
+    [root@xianghui ~]# cat cleanup
+    for  cmp in mysql keystone glance nova cinder neutron heat
+    do
+        rm -rf /var/lib/$cmp
+        rm -rf /etc/$cmp
+           rm -rf /var/log/$cmp
+    done
+    [root@xianghui ~]#  source cleanup
+    [root@xianghui ~]#  yum clean all
