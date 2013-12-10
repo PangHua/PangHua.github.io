@@ -132,27 +132,27 @@ Download and install pre-built image with Fedora 19
 
 # Login dashboard and find out a page named "savanna", the plugins item including two plugins type: vanilla/hdp
 
-[![plugins1](/images/tech/savanna1.png)](/images/tech/savanna1.png)
+[![savanna1](/images/tech/savanna1.jpg)](/images/tech/savanna1.jpg)
 
 # Register prebuild image in dashboard:
 note tags:='["vanilla", "1.2.1", "fedora"]'
 
-[![plugins2](/images/tech/savanna2.png)](/images/tech/savanna2.png)
+[![savanna2](/images/tech/savanna2.jpg)](/images/tech/savanna2.jpg)
 
 Create `node groups`: `data node`/`name node` templates
 
-[![plugins3](/images/tech/savanna3.png)](/images/tech/savanna3.png)
+[![savanna3](/images/tech/savanna3.jpg)](/images/tech/savanna3.jpg)
 
 Create `cluster templates`
 
-[![plugins4](/images/tech/savanna4.png)](/images/tech/savanna4.png)
-[![plugins5](/images/tech/savanna5.jpg)](/images/tech/savanna5.jpg)
-[![plugins6](/images/tech/savanna6.jpg)](/images/tech/savanna6.jpg)
-[![plugins7](/images/tech/savanna7.jpg)](/images/tech/savanna7.jpg)
+[![savanna4](/images/tech/savanna4.jpg)](/images/tech/savanna4.jpg)
+[![savanna5](/images/tech/savanna5.jpg)](/images/tech/savanna5.jpg)
+[![savanna6](/images/tech/savanna6.jpg)](/images/tech/savanna6.jpg)
+[![savanna7](/images/tech/savanna7.jpg)](/images/tech/savanna7.jpg)
 
 Create `cluster`
 
-[![plugins8](/images/tech/savanna8.jpg)](/images/tech/savanna8.jpg)
+[![savanna8](/images/tech/savanna8.jpg)](/images/tech/savanna8.jpg)
 
 [1]:  http://openstack.redhat.com/QuickStartLatest
 [2]:  https://savanna.readthedocs.org/en/latest/horizon/installation.guide.html

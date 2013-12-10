@@ -19,13 +19,19 @@ Compute: Vcenter 5.5
 Referrence:
 
 [VMware-vSphere-support][1]
+
 [DeveloperGuide][2]
+
 [VMWare_networking][3]
 
 # Install vcenter
+
 [vSphere Web Services SDK 5.5 Release Notes][4]
+
 [VMware vSphere][5]
+
 [vSphere 5.5 Documentation Center][6]
+
 [Downloads | VMware Communities][7]
 
 # Install and configure OpenStack(keystone/glance/nova/neutron)
