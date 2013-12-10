@@ -20,30 +20,31 @@ Compute node : ESXI 5.5
 
 # Configure controller node succesfully
 
-*Recommend to use devstack/packstack*
+*Recommend to use `devstack`/`packstack`*
+
 service Keystone/Glance/Nova/Neutron works well
 
 # Download ESXI SDK 5.5 
 
-    unzip to directory /var/lib/
+`Unzip` to directory /var/lib/
 
 # Configure the ESXI5.5 host and create a cluster
 
 create a network port group named "br-int" in ESXI driver with vSphere client on the network configuration items.
 
-1. Click "Configuration" item on ESXI with the vsphereclient
+Click "Configuration" item on ESXI with the vsphereclient
 
 [![ESXI-1](/images/tech/esxi1.jpg)](/images/tech/esxi1.jpg)
 
-2. Click "Add networking", Choose "Virtual machine" , then "Next"
+Click "Add networking", Choose "Virtual machine" , then "Next"
 
 [![ESXI-2](/images/tech/esxi2.jpg)](/images/tech/esxi2.jpg)
 
-3. Create or choose the default switch , then "Next"
+Create or choose the default switch , then "Next"
 
 [![ESXI-3](/images/tech/esxi3.jpg)](/images/tech/esxi3.jpg)
 
-4. Fill the "Port group properties"
+Fill the "Port group properties"
 
 [![ESXI-4](/images/tech/esxi4.jpg)](/images/tech/esxi4.jpg)
 
@@ -99,11 +100,12 @@ Below is the clarification from vmware ：
     One possible fix would be to use a SCSI controller (one of http://pubs.vmware.com/vsphere-51/index.jsp?topic=%2Fcom.vmware.wssdk.apiref.doc%2Fvim.vm.device.VirtualSCSIController.html) for volume's disk irrespective of primary disk's controller.
 
 
-    glance add name="ubuntuLTS" disk_format=vmdk container_format=ovf \
-    is_public=true vmware_adaptertype="lsiLogic" vmware_disktype="preallocated"\
-    vmware_ostype="ubuntu64Guest" < ubuntuLTS-flat.vmdk
+    glance add name="ubuntuLTS" disk_format=vmdk container_format=ovf is_public=true vmware_adaptertype="lsiLogic" vmware_disktype="preallocated" vmware_ostype="ubuntu64Guest" < ubuntuLTS-flat.vmdk
 
 referrence : 
 
-<https://wiki.openstack.org/wiki/NovaVMware/DeveloperGuide>
-<http://docs.openstack.org/havana/config-reference/content/vmware.html>
+[DeveloperGuide][1]
+[vmware][2]
+
+[1]:  <https://wiki.openstack.org/wiki/NovaVMware/DeveloperGuide>
+[2]:  <http://docs.openstack.org/havana/config-reference/content/vmware.html>
