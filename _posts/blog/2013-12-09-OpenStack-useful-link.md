@@ -53,6 +53,8 @@ VmWare Blog
 
 <http://pubs.vmware.com/vsphere-51/index.jsp?topic=%2Fcom.vmware.wssdk.apiref.doc%2Fvim.vm.device.VirtualSCSIController.html>
 
+<http://finance.yahoo.com/news/vmware-advances-support-openstack-framework-220000314.html>
+
 OpenStack Tech Blog
 -------------------
 
@@ -63,6 +65,8 @@ OpenStack Tech Blog
 <http://www.cisco.com/en/US/prod/collateral/switches/ps9441/ps9902/guide_c07-702975.pdf>
 
 <http://www.openstack.org/software/start/>
+
+<http://docs.openstack.org/developer/horizon/topics/tutorial.html#creating-a-dashboard>
 
 OSSG
 ----
@@ -81,4 +85,28 @@ MailList
 --------
 
 <http://openstack.markmail.org/search/?q=neutron>
+
+Tarball
+-------
+
+<http://tarballs.openstack.org/>
+
+Linux packages
+--------------
+
+<http://pkgs.org/>
+
+Savanna
+-------
+
+<https://etherpad.openstack.org/p/savanna_API_draft_EDP_extensions>
+
+<https://etherpad.openstack.org/p/edp_v3_components>
+
+<https://savanna.readthedocs.org/en/latest/>
+
+Python API
+----------
+
+<http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-pythonapis/index.html>
 
