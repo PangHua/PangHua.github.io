@@ -6,7 +6,7 @@ title: OpenStack unit tests environment debugging
 {{ page.title }}
 ================
 
-<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2013 - BeiJing Ring Building</p>
 
 Most cases, it needs to provide corresponding unit tests for each project's source code in OpenSTack community,
 but due to  the dependency of packages version, unit test may be failed, this post just briefly introduce how to
@@ -18,16 +18,16 @@ Use `OpenStack/Neutron` as an example:
 
 */opt/stack/neutron/requirements.txt is the dependency requirement of neutron project*
 
-    tools/with_venv.sh pip install --upgrade /opt/stack/neutron/requirements.txt 
+    tools/with_venv.sh pip install --r /opt/stack/neutron/requirements.txt 
 
 */opt/stack/neutron/test_requirements.txt is the dependency requirement of neutron project test*
 
-    tools/with_venv.sh pip install --upgrade /opt/stack/neutron/test_requirements.txt
+    tools/with_venv.sh pip install --r /opt/stack/neutron/test_requirements.txt
 
 ##### If not using virtual env to deploy OpenStack:
 
-    pip install --upgrade -r requirements.txt
-    pip install --upgrade -r  test-requirements.txt
+    pip install --install -r requirements.txt
+    pip install --install -r  test-requirements.txt
 
 Results appear:
 

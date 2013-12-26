@@ -6,7 +6,7 @@ title: Set up Hadoop cluster with OpenStack Savanna
 {{ page.title }}
 ================
 
-<p class="meta">10 Dec 2012 - BeiJing Home</p>
+<p class="meta">10 Dec 2013 - BeiJing Home</p>
 
 # Deploy OpenStack primary components
 *keystone/glance/nova/neutron/horizon*

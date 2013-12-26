@@ -6,7 +6,7 @@ title: OpenStack yum set
 {{ page.title }}
 ================
 
-<p class="meta">10 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">10 Dec 2013 - BeiJing Ring Building</p>
 
 ## Fedora19
 <ftp://114.112.41.90/fedora/releases/19/Everything/x86_64/os/>

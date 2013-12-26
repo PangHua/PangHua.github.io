@@ -6,7 +6,7 @@ title: OpenStack useful link
 {{ page.title }}
 ================
 
-<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2013 - BeiJing Ring Building</p>
 
 Neutron/APIv2-specification
 ---------------------------
@@ -109,4 +109,11 @@ Python API
 ----------
 
 <http://www.ibm.com/developerworks/cn/cloud/library/cl-openstack-pythonapis/index.html>
+
+HAProxy
+-------
+
+<http://haproxy.1wt.eu/#docs>
+<http://cbonte.github.io/haproxy-dconv/configuration-1.5.html>
+<http://docs.openstack.org/high-availability-guide/content/ch-intro.html>
 

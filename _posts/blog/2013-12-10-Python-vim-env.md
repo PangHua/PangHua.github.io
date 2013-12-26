@@ -6,7 +6,7 @@ title: Python vim env
 {{ page.title }}
 ================
 
-<p class="meta">10 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">10 Dec 2013 - BeiJing Ring Building</p>
 
 # Install ctags
     

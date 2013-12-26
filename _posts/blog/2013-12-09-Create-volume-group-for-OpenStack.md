@@ -6,7 +6,7 @@ title: Create volume group for OpenStack
 {{ page.title }}
 ================
  
-<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2013 - BeiJing Ring Building</p>
 
 ### I'm going to partition /dev/sdb3 to create volume group, steps are：
 

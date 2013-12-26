@@ -6,7 +6,7 @@ title: OpenStack Savanna premium
 {{ page.title }}
 ================
 
-<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2013 - BeiJing Ring Building</p>
 
 Apache Hadoop is an industry standard and widely adopted MapReduce implementation. The aim of this project is to enable users to easily provision and manage Hadoop clusters on OpenStack. It is worth mentioning that Amazon provides Hadoop for several years as Amazon Elastic MapReduce (EMR) service.
 

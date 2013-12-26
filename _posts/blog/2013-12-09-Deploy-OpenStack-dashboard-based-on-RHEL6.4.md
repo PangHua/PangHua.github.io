@@ -6,7 +6,7 @@ title: Deploy OpenStack dashboard (Havana)  based on RHEL6.4
 {{ page.title }}
 ================
 
-<p class="meta">9 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">9 Dec 2013 - BeiJing Ring Building</p>
 
 ## Prerequisites: 
 

@@ -6,7 +6,7 @@ title: Configure OpenStack Neutron flat network with ml2 plugin
 {{ page.title }}
 ================
 
-<p class="meta">10 Dec 2012 - BeiJing Ring Building</p>
+<p class="meta">10 Dec 2013 - BeiJing Ring Building</p>
 
 OS:RHEL6.4
 OpenStack version: Havana
